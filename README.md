@@ -10,19 +10,19 @@ Create a JS/TypeScript library using our Rest API to show content of top of an H
 
 Create a simple HTML page, that hosts a video stream (use this URL: https://buffup-public.s3.eu-west-2.amazonaws.com/video/toronto+nba+cut+3.mp4) in any HTML5 video player you want.
 
-Import the library you have created in Part B, to display content on top of that player
+Import the nom package for the library that you have created in Part B, to display content on top of that player
 
-## Part B: Web SDK
+## Part B: Web Library
 
-We now want an SDK that allows to display content (Buff's as we call them) over any existing video player.
+We now want a JS/Typescript library distributed as an npm package, that allows to display content (Buff's as we call them) over any existing video player.
 
 The Developer using our library should import our library and initialize it with the ID of the player.
 
-The SDK then should locate the HTML player frame, and render on top of that HTML content (our Buffs)
+The library then should locate the HTML player frame, and render on top of that HTML content (our Buffs)
 
-### SDK Requirements
+### Library Requirements
 
-The SDK should have the following features
+The library should have the following features
 
 - Automatically detect the player frame and put a transparent layer on top of that view that will display our content
 - Handle all the business and UI logic to display the Buffs over the video in the view
@@ -31,7 +31,11 @@ The SDK should have the following features
 
 The Buff UI should look like this:
 
-![Screenshot 2020-02-27 at 11.46.42](/Users/lefteris/Desktop/Screenshot 2020-02-27 at 11.46.42.png)
+![Buff](Buff.png)
+
+### A sample video of the Buffs showing on the current iOS version can be seen here:
+
+https://github.com/buffup/WebTechTest/blob/master/Buff.mov?raw=true
 
 
 
@@ -67,7 +71,7 @@ The UI has 3 sections:
 
 ## API Usage
 
-This a brief summary of the api endpoints you will need in order to create the SDK. There a lot of other additional properties from the json responses that are not relevant, but you must use these endpoints to retrieve the information needed for this task.
+This a brief summary of the api endpoints you will need in order to create the library. There a lot of other additional properties from the json responses that are not relevant, but you must use these endpoints to retrieve the information needed for this task.
 
 #### Base URL
 
