@@ -10,7 +10,7 @@ Create a JS/TypeScript library using our Rest API to show content of top of an H
 
 Create a simple HTML page, that hosts a video stream (use this URL: https://buffup-public.s3.eu-west-2.amazonaws.com/video/toronto+nba+cut+3.mp4) in any HTML5 video player you want.
 
-Import the nom package for the library that you have created in Part B, to display content on top of that player
+Import the npm package for the library that you have created in Part B, to display content on top of that player
 
 ## Part B: Web Library
 
