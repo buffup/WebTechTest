@@ -8,7 +8,7 @@ Create a JS/TypeScript library using our Rest API to show content of top of an H
 
 ## Part A: HTML Player
 
-Create a simple HTML page, that hosts a video stream (use this URL: https://buffup-public.s3.eu-west-2.amazonaws.com/video/toronto+nba+cut+3.mp4) in any HTML5 video player you want.
+Create a simple HTML page, that hosts a video stream (**use this URL**: https://buffup-public.s3.eu-west-2.amazonaws.com/video/toronto+nba+cut+3.mp4) in any HTML5 video player you want.
 
 Import the npm package for the library that you have created in Part B, to display content on top of that player
 
@@ -50,8 +50,6 @@ The UI has 3 sections:
 **The number of answers can vary from 2 to 5, your UI should automatically adapt to the number of answers that the API delivers**
 
 **If the user selects an answer, the timer should stop and you should hide the Buff after 2 seconds**
-
-***We do not care about the UI look, so you can create a skeleton UI that matches our UI***
 
 
 
