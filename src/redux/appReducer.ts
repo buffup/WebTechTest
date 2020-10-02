@@ -18,8 +18,6 @@ const initialQuizState: QuizState = {
 
 function questionReduxReducer(state = initialQuizState, action) {
 
-
-
   switch (action.type) {
     case sportwebservice.Types.GET_QUESTIONS_SUCCESS:
       return {
@@ -33,7 +31,7 @@ function questionReduxReducer(state = initialQuizState, action) {
         questions: [
           ...state.questions.slice(0, action.payload.index),
           ...state.questions.slice(action.payload.index + 1)
-      ],
+        ],
       };
     default:
       return state;
