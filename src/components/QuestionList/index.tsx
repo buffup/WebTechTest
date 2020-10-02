@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'center',
       color: theme.palette.text.secondary,
       display: 'flex',
-      
+
       justifyContent: 'space-evenly',
     },
     questionDetails: {
@@ -46,23 +46,24 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-function QuestionListView({dispatch, questions}) {
+function QuestionListView({ dispatch, questions }) {
 
   const classes = useStyles();
 
   useEffect(() => {
+    dispatch(getQuestionsRequest());
   }, []);
 
   const getMoreQuestions = () => {
     dispatch(getQuestionsRequest());
   }
 
-  const deleteQuestion =  (index) => {
-      dispatch(deleteQuestionRequest(index));
+  const deleteQuestion = (index) => {
+    dispatch(deleteQuestionRequest(index));
   }
 
   const editQuestion = (index) => {
-   // TODO
+    // TODO
   }
 
   return (
@@ -81,11 +82,11 @@ function QuestionListView({dispatch, questions}) {
                 <Box>{question.difficulty}</Box>
               </Box>
               <Box className={classes.buttons}>
-              <Button variant="contained" color="primary" onClick={() => editQuestion(index)}>
-                Edit
+                <Button variant="contained" color="primary" onClick={() => editQuestion(index)}>
+                  Edit
               </Button>
-              <Button variant="contained" color="primary" onClick={() => deleteQuestion(index)}>
-Delete      </Button>
+                <Button variant="contained" color="primary" onClick={() => deleteQuestion(index)}>
+                  Delete      </Button>
               </Box>
             </Paper>
           </Grid>
